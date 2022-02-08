@@ -33,6 +33,7 @@ function initPane() {
     shininess: 5.0,
     background: { r: 120, g: 178, b: 255 },
     antialias: true,
+    temperature: 10,
   };
 
   pane.addInput(params, "project", {
@@ -48,6 +49,7 @@ function initPane() {
   const inputs = [
     [pane.addInput(params, "seed", { min: 0, max: 1 }), ["quilt", "landscape"]],
     [pane.addInput(params, "scale", { min: 10, max: 30 }), ["landscape"]],
+    [pane.addInput(params, "temperature", { min: 10, max: 30 }), ["landscape"]],
     [
       pane
         .addInput(params, "mesh", {
